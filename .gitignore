@@ -5,4 +5,4 @@ __pycache__/
 data/raw/*.pdf
 .pytest_cache/
 node_modules/
-.next/
+.next/data/processed/
