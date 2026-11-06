@@ -3,9 +3,10 @@ __pycache__/
 *.pyc
 .env
 data/raw/*.pdf
+data/processed/
+data/models/
 .pytest_cache/
 node_modules/
-.next/data/processed/
-data/models/
+.next/
 search*.txt
 out.txt
