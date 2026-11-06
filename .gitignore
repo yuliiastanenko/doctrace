@@ -6,3 +6,6 @@ data/raw/*.pdf
 .pytest_cache/
 node_modules/
 .next/data/processed/
+data/models/
+search*.txt
+out.txt

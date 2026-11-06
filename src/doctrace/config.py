@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     anthropic_api_key: str = ""
     data_dir: Path = ROOT / "data"
     chunk_max_chars: int = 1500
+    embedding_model: str = "intfloat/multilingual-e5-large"
 
     @property
     def raw_dir(self) -> Path:
@@ -21,6 +22,14 @@ class Settings(BaseSettings):
     @property
     def processed_dir(self) -> Path:
         return self.data_dir / "processed"
+
+    @property
+    def models_dir(self) -> Path:
+        return self.data_dir / "models"
+
+
+def collection_name(model: str, max_chars: int) -> str:
+    return f"{model.split('/')[-1].lower()}_{max_chars}"
 
 
 settings = Settings()
