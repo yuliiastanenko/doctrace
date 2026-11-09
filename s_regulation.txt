@@ -1,0 +1,96 @@
+
+########## vector ##########
+
+1. ai_act:annex_i#4  (page 124)  [vector #1]
+   AI Act, Annex I: List of Union harmonisation legislation
+   19. Regulation (EU) 2019/2144 of the European Parliament and of the Council of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units in...
+
+2. ai_act:recital_158#2  (page 39)  [vector #2]
+   AI Act, Recital 158
+   Those competent authorities should have all powers under this Regulation and Regulation (EU) 2019/1020 to enforce the requirements and obligations of this Regulation, including powers to carry our ex post market surveill...
+
+3. ai_act:recital_156  (page 39)  [vector #3]
+   AI Act, Recital 156
+   In order to ensure an appropriate and effective enforcement of the requirements and obligations set out by this Regulation, which is Union harmonisation legislation, the system of market surveillance and compliance of pr...
+
+4. ai_act:article_74(1)-(2)  (page 102)  [vector #4]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 3 Enforcement, Article 74: Market surveillance and control of AI systems in the Union market
+   1. Regulation (EU) 2019/1020 shall apply to AI systems covered by this Regulation. For the purposes of the effective enforcement of this Regulation: (a) any reference to an economic operator under Regulation (EU) 2019/10...
+
+5. ai_act:annex_x#4  (page 139)  [vector #5]
+   AI Act, Annex X: Union legislative acts on large-scale IT systems in the area of Freedom, Security and Justice
+   6. European Criminal Records Information System on third-country nationals and stateless persons Regulation (EU) 2019/816 of the European Parliament and of the Council of 17 April 2019 establishing a centralised system f...
+
+time: 12.99s (vector 12.99s)
+
+########## fulltext ##########
+
+1. ai_act:article_74(1)-(2)  (page 102)  [fulltext #1]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 3 Enforcement, Article 74: Market surveillance and control of AI systems in the Union market
+   1. Regulation (EU) 2019/1020 shall apply to AI systems covered by this Regulation. For the purposes of the effective enforcement of this Regulation: (a) any reference to an economic operator under Regulation (EU) 2019/10...
+
+2. ai_act:recital_158#2  (page 39)  [fulltext #2]
+   AI Act, Recital 158
+   Those competent authorities should have all powers under this Regulation and Regulation (EU) 2019/1020 to enforce the requirements and obligations of this Regulation, including powers to carry our ex post market surveill...
+
+3. ai_act:article_73(8)-(11)  (page 102)  [fulltext #3]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 2 Sharing of information on serious incidents, Article 73: Reporting of serious incidents
+   8. The market surveillance authority shall take appropriate measures, as provided for in Article 19 of Regulation (EU) 2019/1020, within seven days from the date it received the notification referred to in paragraph 1 of...
+
+4. ai_act:recital_156  (page 39)  [fulltext #4]
+   AI Act, Recital 156
+   In order to ensure an appropriate and effective enforcement of the requirements and obligations set out by this Regulation, which is Union harmonisation legislation, the system of market surveillance and compliance of pr...
+
+5. ai_act:recital_164  (page 41)  [fulltext #5]
+   AI Act, Recital 164
+   The AI Office should be able to take the necessary actions to monitor the effective implementation of and compliance with the obligations for providers of general-purpose AI models laid down in this Regulation. The AI Of...
+
+time: 0.09s (fulltext 0.09s)
+
+########## hybrid ##########
+
+1. ai_act:recital_158#2  (page 39)  [vector #2 · fulltext #2]
+   AI Act, Recital 158
+   Those competent authorities should have all powers under this Regulation and Regulation (EU) 2019/1020 to enforce the requirements and obligations of this Regulation, including powers to carry our ex post market surveill...
+
+2. ai_act:article_74(1)-(2)  (page 102)  [vector #4 · fulltext #1]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 3 Enforcement, Article 74: Market surveillance and control of AI systems in the Union market
+   1. Regulation (EU) 2019/1020 shall apply to AI systems covered by this Regulation. For the purposes of the effective enforcement of this Regulation: (a) any reference to an economic operator under Regulation (EU) 2019/10...
+
+3. ai_act:recital_156  (page 39)  [vector #3 · fulltext #4]
+   AI Act, Recital 156
+   In order to ensure an appropriate and effective enforcement of the requirements and obligations set out by this Regulation, which is Union harmonisation legislation, the system of market surveillance and compliance of pr...
+
+4. ai_act:recital_9  (page 3)  [vector #10 · fulltext #7]
+   AI Act, Recital 9
+   Harmonised rules applicable to the placing on the market, the putting into service and the use of high-risk AI systems should be laid down consistently with Regulation (EC) No 765/2008 of the European Parliament and of t...
+
+5. ai_act:article_80(4)-(8)  (page 108)  [vector #7 · fulltext #12]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 3 Enforcement, Article 80: Procedure for dealing with AI systems classified by the provider as non-high-risk in application of Annex III
+   4. The provider shall ensure that all necessary action is taken to bring the AI system into compliance with the requirements and obligations laid down in this Regulation. Where the provider of an AI system concerned does...
+
+time: 0.24s (vector 0.19s, fulltext 0.05s, ref 0.00s)
+
+########## rerank ##########
+
+1. ai_act:article_74(1)-(2)  (page 102)  [vector #4 · fulltext #1 · rerank 8.97]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 3 Enforcement, Article 74: Market surveillance and control of AI systems in the Union market
+   1. Regulation (EU) 2019/1020 shall apply to AI systems covered by this Regulation. For the purposes of the effective enforcement of this Regulation: (a) any reference to an economic operator under Regulation (EU) 2019/10...
+
+2. ai_act:recital_156  (page 39)  [vector #3 · fulltext #4 · rerank 7.91]
+   AI Act, Recital 156
+   In order to ensure an appropriate and effective enforcement of the requirements and obligations set out by this Regulation, which is Union harmonisation legislation, the system of market surveillance and compliance of pr...
+
+3. ai_act:recital_158#2  (page 39)  [vector #2 · fulltext #2 · rerank 7.88]
+   AI Act, Recital 158
+   Those competent authorities should have all powers under this Regulation and Regulation (EU) 2019/1020 to enforce the requirements and obligations of this Regulation, including powers to carry our ex post market surveill...
+
+4. ai_act:article_94  (page 113)  [vector #27 · fulltext #14 · rerank 6.98]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 5 Supervision, investigation, enforcement and monitoring in respect of providers of general-purpose AI models, Article 94: Procedural rights of economic operators of the general-purpose AI model
+   Article 18 of Regulation (EU) 2019/1020 shall apply mutatis mutandis to the providers of the general-purpose AI model, without prejudice to more specific procedural rights provided for in this Regulation.
+
+5. ai_act:article_73(8)-(11)  (page 102)  [fulltext #3 · rerank 6.65]
+   AI Act, Chapter IX POST-MARKET MONITORING, INFORMATION SHARING AND MARKET SURVEILLANCE, Section 2 Sharing of information on serious incidents, Article 73: Reporting of serious incidents
+   8. The market surveillance authority shall take appropriate measures, as provided for in Article 19 of Regulation (EU) 2019/1020, within seven days from the date it received the notification referred to in paragraph 1 of...
+
+time: 3.69s (vector 0.20s, fulltext 0.05s, ref 0.00s, rerank 3.44s)

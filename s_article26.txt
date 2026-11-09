@@ -1,0 +1,96 @@
+
+########## vector ##########
+
+1. gdpr:article_26(1)-(3)  (page 48)  [vector #1]
+   GDPR, Chapter IV Controller and processor, Article 26: Joint controllers
+   1. Where two or more controllers jointly determine the purposes and means of processing, they shall be joint controllers. They shall in a transparent manner determine their respective responsibilities for compliance with...
+
+2. gdpr:article_58(3)-(4)  (page 70)  [vector #2]
+   GDPR, Chapter VI Independent supervisory authorities, Article 58: Powers
+   3. Each supervisory authority shall have all of the following authorisation and advisory powers: (a) to advise the controller in accordance with the prior consultation procedure referred to in Article 36; (b) to issue, o...
+
+3. ai_act:article_40(2)#2  (page 76)  [vector #3]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 5 Standards, conformity assessment, certificates, registration, Article 40: Harmonised standards and standardisation deliverables
+   The Commission shall request the European standardisation organisations to provide evidence of their best efforts to fulfil the objectives referred to in the first and the second subparagraph of this paragraph in accorda...
+
+4. gdpr:article_46(3)-(5)  (page 62)  [vector #4]
+   GDPR, Chapter V Transfers of personal data to third countries or international organisations, Article 46: Transfers subject to appropriate safeguards
+   3. Subject to the authorisation from the competent supervisory authority, the appropriate safeguards referred to in paragraph 1 may also be provided for, in particular, by: (a) contractual clauses between the controller ...
+
+5. ai_act:article_96(1)  (page 114)  [vector #5]
+   AI Act, Chapter X CODES OF CONDUCT AND GUIDELINES, Article 96: Guidelines from the Commission on the implementation of this Regulation
+   1. The Commission shall develop guidelines on the practical implementation of this Regulation, and in particular on: (a) the application of the requirements and obligations referred to in Articles 8 to 15 and in Article ...
+
+time: 16.80s (vector 16.80s)
+
+########## fulltext ##########
+
+1. ai_act:article_99(4)-(6)  (page 115)  [fulltext #1]
+   AI Act, Chapter XII PENALTIES, Article 99: Penalties
+   4. Non-compliance with any of the following provisions related to operators or notified bodies, other than those laid down in Articles 5, shall be subject to administrative fines of up to EUR 15 000 000 or, if the offend...
+
+2. ai_act:recital_40  (page 11)  [fulltext #2]
+   AI Act, Recital 40
+   In accordance with Article 6a of Protocol No 21 on the position of the United Kingdom and Ireland in respect of the area of freedom, security and justice, as annexed to the TEU and to the TFEU, Ireland is not bound by th...
+
+3. gdpr:article_46(3)-(5)  (page 62)  [fulltext #3]
+   GDPR, Chapter V Transfers of personal data to third countries or international organisations, Article 46: Transfers subject to appropriate safeguards
+   3. Subject to the authorisation from the competent supervisory authority, the appropriate safeguards referred to in paragraph 1 may also be provided for, in particular, by: (a) contractual clauses between the controller ...
+
+4. ai_act:annex_viii#3  (page 136)  [fulltext #4]
+   AI Act, Annex VIII: Information to be submitted upon the registration of high-risk AI systems in accordance with Article 49
+   9. Any Member States in which the AI system has been placed on the market, put into service or made available in the Union. Section C — Information to be submitted by deployers of high-risk AI systems in accordance with ...
+
+5. ai_act:recital_41  (page 11)  [fulltext #5]
+   AI Act, Recital 41
+   In accordance with Articles 2 and 2a of Protocol No 22 on the position of Denmark, annexed to the TEU and to the TFEU, Denmark is not bound by rules laid down in Article 5(1), first subparagraph, point (g), to the extent...
+
+time: 0.11s (fulltext 0.11s)
+
+########## hybrid ##########
+
+1. gdpr:article_26(1)-(3)  (page 48)  [vector #1 · fulltext #11 · ref #1]
+   GDPR, Chapter IV Controller and processor, Article 26: Joint controllers
+   1. Where two or more controllers jointly determine the purposes and means of processing, they shall be joint controllers. They shall in a transparent manner determine their respective responsibilities for compliance with...
+
+2. ai_act:article_26(5)  (page 68)  [fulltext #8 · ref #3]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   5. Deployers shall monitor the operation of the high-risk AI system on the basis of the instructions for use and, where relevant, inform providers in accordance with Article 72. Where deployers have reason to consider th...
+
+3. ai_act:article_26(1)-(4)  (page 67)  [fulltext #16 · ref #2]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   1. Deployers of high-risk AI systems shall take appropriate technical and organisational measures to ensure they use such systems in accordance with the instructions for use accompanying the systems, pursuant to paragrap...
+
+4. ai_act:article_26(8)-(9)  (page 68)  [fulltext #6 · ref #5]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   8. Deployers of high-risk AI systems that are public authorities, or Union institutions, bodies, offices or agencies shall comply with the registration obligations referred to in Article 49. When such deployers find that...
+
+5. ai_act:article_26(6)-(7)  (page 68)  [fulltext #17 · ref #4]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   6. Deployers of high-risk AI systems shall keep the logs automatically generated by that high-risk AI system to the extent such logs are under their control, for a period appropriate to the intended purpose of the high-r...
+
+time: 0.33s (vector 0.23s, fulltext 0.05s, ref 0.05s)
+
+########## rerank ##########
+
+1. gdpr:article_26(1)-(3)  (page 48)  [vector #1 · fulltext #11 · ref #1 · rerank 4.74]
+   GDPR, Chapter IV Controller and processor, Article 26: Joint controllers
+   1. Where two or more controllers jointly determine the purposes and means of processing, they shall be joint controllers. They shall in a transparent manner determine their respective responsibilities for compliance with...
+
+2. ai_act:article_26(1)-(4)  (page 67)  [fulltext #16 · ref #2 · rerank 3.94]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   1. Deployers of high-risk AI systems shall take appropriate technical and organisational measures to ensure they use such systems in accordance with the instructions for use accompanying the systems, pursuant to paragrap...
+
+3. ai_act:article_26(10)#2  (page 68)  [fulltext #9 · ref #7 · rerank 3.88]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   It shall be ensured that no decision that produces an adverse legal effect on a person may be taken by the law enforcement authorities based solely on the output of such post-remote biometric identification systems. This...
+
+4. ai_act:article_26(8)-(9)  (page 68)  [fulltext #6 · ref #5 · rerank 3.60]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   8. Deployers of high-risk AI systems that are public authorities, or Union institutions, bodies, offices or agencies shall comply with the registration obligations referred to in Article 49. When such deployers find that...
+
+5. ai_act:article_26(11)-(12)  (page 69)  [fulltext #10 · ref #8 · rerank 3.49]
+   AI Act, Chapter III HIGH-RISK AI SYSTEMS, Section 3 Obligations of providers and deployers of high-risk AI systems and other parties, Article 26: Obligations of deployers of high-risk AI systems
+   11. Without prejudice to Article 50 of this Regulation, deployers of high-risk AI systems referred to in Annex III that make decisions or assist in making decisions related to natural persons shall inform the natural per...
+
+time: 21.44s (vector 0.33s, fulltext 0.05s, ref 0.04s, rerank 21.02s)

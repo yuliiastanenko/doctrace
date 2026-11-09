@@ -33,6 +33,7 @@ def main() -> None:
     p = with_model(sub.add_parser("search"))
     p.add_argument("query")
     p.add_argument("-k", type=int, default=5)
+    p.add_argument("--mode", choices=["vector", "fulltext", "hybrid", "rerank", "all"], default="rerank")
 
     args = parser.parse_args()
 
@@ -53,6 +54,10 @@ def main() -> None:
 
         build_index(args.model, args.max_chars)
     elif args.cmd == "search":
-        from doctrace.search import print_hits, vector_search
+        from doctrace.retrieve import MODES, print_result, retrieve
 
-        print_hits(vector_search(args.query, args.model, args.max_chars, args.k))
+        modes = MODES if args.mode == "all" else (args.mode,)
+        for mode in modes:
+            if len(modes) > 1:
+                print(f"\n########## {mode} ##########")
+            print_result(retrieve(args.query, mode=mode, k=args.k, model=args.model, max_chars=args.max_chars))

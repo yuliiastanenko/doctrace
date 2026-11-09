@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     data_dir: Path = ROOT / "data"
     chunk_max_chars: int = 1500
     embedding_model: str = "intfloat/multilingual-e5-large"
+    reranker_model: str = "Xenova/ms-marco-MiniLM-L-6-v2"
 
     @property
     def raw_dir(self) -> Path:

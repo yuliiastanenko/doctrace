@@ -9,4 +9,4 @@ data/models/
 node_modules/
 .next/
 search*.txt
-out.txt
+out.txts_*.txt
