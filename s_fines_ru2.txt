@@ -1,0 +1,23 @@
+note: rerank skipped: the reranker is English-only, using hybrid order
+
+1. ai_act:article_99(1)-(3)  (page 115)  [vector #1]
+   AI Act, Chapter XII PENALTIES, Article 99: Penalties
+   1. In accordance with the terms and conditions laid down in this Regulation, Member States shall lay down the rules on penalties and other enforcement measures, which may also include warnings and non-monetary measures, ...
+
+2. ai_act:article_100(2)-(6)  (page 117)  [vector #2]
+   AI Act, Chapter XII PENALTIES, Article 100: Administrative fines on Union institutions, bodies, offices and agencies
+   2. Non-compliance with the prohibition of the AI practices referred to in Article 5 shall be subject to administrative fines of up to EUR 1 500 000. 3. The non-compliance of the AI system with any requirements or obligat...
+
+3. ai_act:article_101(1)-(3)  (page 117)  [vector #3]
+   AI Act, Chapter XII PENALTIES, Article 101: Fines for providers of general-purpose AI models
+   1. The Commission may impose on providers of general-purpose AI models fines not exceeding 3 % of their annual total worldwide turnover in the preceding financial year or EUR 15 000 000, whichever is higher., when the Co...
+
+4. ai_act:article_99(4)-(6)  (page 115)  [vector #4]
+   AI Act, Chapter XII PENALTIES, Article 99: Penalties
+   4. Non-compliance with any of the following provisions related to operators or notified bodies, other than those laid down in Articles 5, shall be subject to administrative fines of up to EUR 15 000 000 or, if the offend...
+
+5. ai_act:article_100(1)  (page 116)  [vector #5]
+   AI Act, Chapter XII PENALTIES, Article 100: Administrative fines on Union institutions, bodies, offices and agencies
+   1. The European Data Protection Supervisor may impose administrative fines on Union institutions, bodies, offices and agencies falling within the scope of this Regulation. When deciding whether to impose an administrativ...
+
+time: 14.50s (vector 14.43s, fulltext 0.07s, ref 0.00s)

@@ -79,6 +79,7 @@ class Hit:
 class Result:
     hits: list[Hit]
     timings: dict
+    notes: list[str] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -109,6 +110,11 @@ def parse_references(query: str) -> list[Reference]:
         if ref not in refs:
             refs.append(ref)
     return refs
+
+
+def is_english(query: str) -> bool:
+    letters = [c for c in query if c.isalpha()]
+    return not letters or sum(c.isascii() for c in letters) / len(letters) >= 0.7
 
 
 def doc_hint(query: str) -> str | None:
@@ -183,6 +189,7 @@ def retrieve(
     candidates: int = 30,
     rerank_pool: int = 20,
     reranker: str | None = None,
+    rerank_any_language: bool = False,
 ) -> Result:
     model = model or settings.embedding_model
     max_chars = max_chars or settings.chunk_max_chars
@@ -206,19 +213,24 @@ def retrieve(
             timings["ref"] = time.perf_counter() - start
 
     hits = fuse(lists)
-    if mode == "rerank":
+    notes = []
+    if mode == "rerank" and (rerank_any_language or is_english(query)):
         start = time.perf_counter()
         hits = rerank(query, hits[:rerank_pool], reranker)
         timings["rerank"] = time.perf_counter() - start
-    elif mode == "hybrid":
+    elif mode in ("hybrid", "rerank"):
+        if mode == "rerank":
+            notes.append("rerank skipped: the reranker is English-only, using hybrid order")
         hits.sort(key=lambda h: (h.pinned, h.fused), reverse=True)
 
-    return Result(hits=hits[:k], timings=timings)
+    return Result(hits=hits[:k], timings=timings, notes=notes)
 
 
 def print_result(result: Result, preview: int = 220) -> None:
+    for note in result.notes:
+        print(f"note: {note}")
     if not result.hits:
-        print("no results, did you run `uv run doctrace index`?")
+        print("no results")
     for i, h in enumerate(result.hits, 1):
         parts = [f"{src} #{rank}" for src, rank in h.ranks.items()]
         if h.rerank is not None:
