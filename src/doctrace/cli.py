@@ -35,6 +35,18 @@ def main() -> None:
     p.add_argument("-k", type=int, default=5)
     p.add_argument("--mode", choices=["vector", "fulltext", "hybrid", "rerank", "all"], default="rerank")
 
+    p = sub.add_parser("ask")
+    p.add_argument("question")
+    p.add_argument("-k", type=int, default=5)
+    p.add_argument("--mode", choices=["vector", "fulltext", "hybrid", "rerank"], default="rerank")
+    p.add_argument("--provider")
+    p.add_argument("--model")
+    p.add_argument("--json", action="store_true")
+    p.add_argument("--verbose", action="store_true")
+
+    p = sub.add_parser("models")
+    p.add_argument("--provider")
+
     args = parser.parse_args()
 
     if args.cmd == "download":
@@ -61,3 +73,14 @@ def main() -> None:
             if len(modes) > 1:
                 print(f"\n########## {mode} ##########")
             print_result(retrieve(args.query, mode=mode, k=args.k, model=args.model, max_chars=args.max_chars))
+    elif args.cmd == "ask":
+        from doctrace.answer import ask, print_answer, to_json
+
+        result = ask(args.question, mode=args.mode, k=args.k, provider=args.provider, model=args.model)
+        print(to_json(result) if args.json else "", end="")
+        if not args.json:
+            print_answer(result, verbose=args.verbose)
+    elif args.cmd == "models":
+        from doctrace.llm import list_models
+
+        print("\n".join(list_models(args.provider)))

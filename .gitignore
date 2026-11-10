@@ -10,3 +10,4 @@ node_modules/
 .next/
 search*.txt
 out.txts_*.txt
+a*.txt

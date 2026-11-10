@@ -1,0 +1,22 @@
+
+1. ai_act:article_5(1)#4  (page 51)  [vector #1 · rerank 5.68]
+   AI Act, Chapter II PROHIBITED AI PRACTICES, Article 5: Prohibited AI practices
+   (iii) the localisation or identification of a person suspected of having committed a criminal offence, for the purpose of conducting a criminal investigation or prosecution or executing a criminal penalty for offences re...
+
+2. ai_act:article_100(2)-(6)  (page 117)  [vector #2 · fulltext #20 · rerank 5.40]
+   AI Act, Chapter XII PENALTIES, Article 100: Administrative fines on Union institutions, bodies, offices and agencies
+   2. Non-compliance with the prohibition of the AI practices referred to in Article 5 shall be subject to administrative fines of up to EUR 1 500 000. 3. The non-compliance of the AI system with any requirements or obligat...
+
+3. ai_act:recital_29#3  (page 8)  [vector #7 · fulltext #3 · rerank 2.85]
+   AI Act, Recital 29
+   The prohibitions for such AI practices are complementary to the provisions contained in Directive 2005/29/EC of the European Parliament and of the Council, in particular unfair commercial practices leading to economic or...
+
+4. ai_act:article_5(1)  (page 51)  [vector #3 · fulltext #10 · rerank 2.00]
+   AI Act, Chapter II PROHIBITED AI PRACTICES, Article 5: Prohibited AI practices
+   1. The following AI practices shall be prohibited: (a) the placing on the market, the putting into service or the use of an AI system that deploys subliminal techniques beyond a person’s consciousness or purposefully man...
+
+5. ai_act:article_5(3)#2  (page 52)  [vector #11 · rerank 1.80]
+   AI Act, Chapter II PROHIBITED AI PRACTICES, Article 5: Prohibited AI practices
+   The competent judicial authority or an independent administrative authority whose decision is binding shall grant the authorisation only where it is satisfied, on the basis of objective evidence or clear indications pres...
+
+time: 15.41s (vector 12.99s, fulltext 0.05s, ref 0.00s, rerank 2.36s)

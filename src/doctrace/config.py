@@ -9,12 +9,14 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=ROOT / ".env", extra="ignore")
 
     database_url: str = ""
-    openai_api_key: str = ""
-    anthropic_api_key: str = ""
     data_dir: Path = ROOT / "data"
     chunk_max_chars: int = 1500
     embedding_model: str = "intfloat/multilingual-e5-large"
     reranker_model: str = "Xenova/ms-marco-MiniLM-L-6-v2"
+    llm_provider: str = "groq"
+    llm_model: str = ""
+    llm_api_key: str = ""
+    cloudflare_account_id: str = ""
 
     @property
     def raw_dir(self) -> Path:
