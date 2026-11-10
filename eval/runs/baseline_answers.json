@@ -1,0 +1,1970 @@
+{
+  "name": "baseline_answers",
+  "config": {
+    "mode": "rerank",
+    "k": 5,
+    "model": "intfloat/multilingual-e5-large",
+    "max_chars": 1500,
+    "rerank_any_language": false,
+    "with_answers": true
+  },
+  "retrieval": {
+    "questions": 48,
+    "hit@1": 50.0,
+    "hit@3": 79.2,
+    "hit@5": 89.6,
+    "hit@10": 93.8,
+    "coverage@5": 87.5,
+    "mrr": 0.661,
+    "latency_p50": 3.14
+  },
+  "answers": {
+    "answered": 89.6,
+    "cites_expected": 79.2,
+    "false_refusal": 10.4,
+    "correct_refusal": 100.0,
+    "wrongly_answered": 0.0,
+    "first_try_citation_valid": 90.8,
+    "retried": 16.1,
+    "rejected": 8.9,
+    "llm_p50_s": 13.38,
+    "tokens_avg": 2797
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_100(2)-(6)",
+        "ai_act:article_5(1)#4",
+        "ai_act:recital_29#3",
+        "ai_act:article_5(1)",
+        "ai_act:article_5(1)#2"
+      ],
+      "retrieve_s": 21.043,
+      "rank": 11,
+      "coverage@5": 0.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The maximum administrative fine for breaching the prohibited AI practices is up to EUR 1 500 000.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_100(2)-(6)",
+          "quote": "Non-compliance with the prohibition of the AI practices referred to in Article 5 shall be subject to administrative fines of up to EUR 1 500 000."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 4.45,
+      "tokens": 1784
+    },
+    {
+      "id": "q02",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_99(4)-(6)",
+        "ai_act:article_101(1)-(3)",
+        "ai_act:article_91(5)",
+        "ai_act:article_100(2)-(6)",
+        "ai_act:article_37(1)-(4)"
+      ],
+      "retrieve_s": 3.343,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The supply of incorrect, incomplete or misleading information to notified bodies or national competent authorities can be fined up to EUR 7 500 000, or for an undertaking up to 1 % of its total worldwide annual turnover for the preceding financial year, whichever is higher.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_99(4)-(6)",
+          "quote": "administrative fines of up to EUR 7 500 000 or, if the offender is an undertaking, up to 1 % of its total worldwide annual turnover"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 2.74,
+      "tokens": 2902
+    },
+    {
+      "id": "q03",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_99(1)-(3)",
+        "ai_act:article_62(1)-(2)",
+        "ai_act:recital_143#2",
+        "ai_act:article_62(3)",
+        "ai_act:article_99(4)-(6)"
+      ],
+      "retrieve_s": 3.504,
+      "rank": 5,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 2,
+      "answer": "For SMEs and start‑ups the fine is limited to the lowest ceiling set out in the penalty rules: the amounts and percentages in paragraphs 3, 4 and 5 are compared and the smallest applies. Thus the maximum fine for an SME is the lower of €35 million / 7 % turnover, €15 million / 3 % turnover and €7.5 million / 1 % turnover – i.e. €7.5 million or 1 % of worldwide turnover, whichever is lower.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_99(1)-(3)",
+          "quote": "shall be subject to administrative fines of up to EUR 35 000 000 or, if the offender is an undertaking, up to 7 % of its total worldwide annual turnover for the preceding financial year, whichever is higher"
+        },
+        {
+          "chunk_id": "ai_act:article_99(4)-(6)",
+          "quote": "shall be subject to administrative fines of up to EUR 15 000 000 or, if the offender is an undertaking, up to 3 % of its total worldwide annual turnover for the preceding financial year, whichever is higher"
+        },
+        {
+          "chunk_id": "ai_act:article_99(4)-(6)",
+          "quote": "shall be subject to administrative fines of up to EUR 7 500 000 or, if the offender is an undertaking, up to 1 % of its total worldwide annual turnover for the preceding financial year, whichever is higher"
+        },
+        {
+          "chunk_id": "ai_act:article_99(4)-(6)",
+          "quote": "In the case of SMEs, including start-ups, each fine referred to in this Article shall be up to the percentages or amount referred to in paragraphs 3, 4 and 5, whichever thereof is lower"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 21.89,
+      "tokens": 6943
+    },
+    {
+      "id": "q04",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_101(1)-(3)",
+        "ai_act:recital_169",
+        "ai_act:article_101(4)-(6)",
+        "ai_act:article_92(1)-(4)",
+        "ai_act:article_91(1)-(4)"
+      ],
+      "retrieve_s": 2.746,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The Commission may impose on providers of general‑purpose AI models fines not exceeding 3 % of their annual total worldwide turnover in the preceding financial year or EUR 15 000 000, whichever is higher, when the provider intentionally or negligently infringes the Regulation, fails to comply with a request for a document or information, supplies incorrect, incomplete or misleading information, fails to comply with a measure requested by the Commission, or fails to make the model available for evaluation.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_101(1)-(3)",
+          "quote": "The Commission may impose on providers of general-purpose AI models fines not exceeding 3 % of their annual total worldwide turnover in the preceding financial year or EUR 15 000 000, whichever is higher."
+        },
+        {
+          "chunk_id": "ai_act:article_101(1)-(3)",
+          "quote": "failed to comply with a request for a document or for information pursuant to Article 91, or supplied incorrect, incomplete or misleading information;"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 15.12,
+      "tokens": 2234
+    },
+    {
+      "id": "q05",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_73(1)-(4)",
+        "ai_act:article_73(8)-(11)",
+        "ai_act:recital_155",
+        "ai_act:article_26(5)",
+        "ai_act:article_73(5)-(7)"
+      ],
+      "retrieve_s": 3.096,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A provider must report the serious incident not later than 15 days after the provider or, where applicable, the deployer becomes aware of the serious incident (unless faster reporting is required for certain cases).",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_73(1)-(4)",
+          "quote": "not later than 15 days after the provider or, where applicable, the deployer, becomes aware of the serious incident."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 14.18,
+      "tokens": 2551
+    },
+    {
+      "id": "q06",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_26(6)-(7)",
+        "ai_act:article_19(1)-(2)",
+        "ai_act:article_12(1)-(3)",
+        "ai_act:article_16",
+        "ai_act:article_22(3)#2"
+      ],
+      "retrieve_s": 3.136,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 2,
+      "answer": "Deployers must keep the automatically generated logs for a period appropriate to the intended purpose of the high‑risk AI system, of at least six months, unless other Union or national law provides otherwise.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_26(6)-(7)",
+          "quote": "for a period appropriate to the intended purpose of the high-risk AI system, of at least six months, unless provided otherwise in applicable Union or national law"
+        }
+      ],
+      "first_attempt_citations": [
+        false
+      ],
+      "cites_expected": true,
+      "llm_s": 37.59,
+      "tokens": 4611
+    },
+    {
+      "id": "q07",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_18(1)-(3)",
+        "ai_act:article_19(1)-(2)",
+        "ai_act:article_23(4)-(7)",
+        "ai_act:article_26(6)-(7)",
+        "ai_act:article_47(1)-(3)"
+      ],
+      "retrieve_s": 3.104,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A provider must keep the technical documentation for a period ending 10 years after the high‑risk AI system has been placed on the market or put into service.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_18(1)-(3)",
+          "quote": "The provider shall, for a period ending 10 years after the high-risk AI system has been placed on the market or put into service, keep at the disposal of the national competent authorities: (a) the technical documentation"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 12.77,
+      "tokens": 2033
+    },
+    {
+      "id": "q08",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_179",
+        "ai_act:recital_179#2",
+        "ai_act:article_113",
+        "ai_act:article_56(9)",
+        "ai_act:article_111(1)-(3)"
+      ],
+      "retrieve_s": 2.845,
+      "rank": 3,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The AI Act generally starts to apply on 2 August 2026.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_113",
+          "quote": "It shall apply from 2 August 2026."
+        },
+        {
+          "chunk_id": "ai_act:recital_179",
+          "quote": "This Regulation should apply from 2 August 2026."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 1.18,
+      "tokens": 1600
+    },
+    {
+      "id": "q09",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_179",
+        "ai_act:recital_179#2",
+        "ai_act:recital_29#3",
+        "ai_act:article_5(1)#4",
+        "ai_act:article_5(1)#2"
+      ],
+      "retrieve_s": 2.822,
+      "rank": null,
+      "coverage@5": 0.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The prohibitions on AI practices apply from 2 February 2025.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:recital_179",
+          "quote": "the prohibitions as well as the general provisions of this Regulation should already apply from 2 February 2025."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 1.29,
+      "tokens": 1487
+    },
+    {
+      "id": "q10",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_12",
+        "ai_act:recital_12#2",
+        "ai_act:article_3",
+        "ai_act:recital_52",
+        "ai_act:recital_1"
+      ],
+      "retrieve_s": 2.728,
+      "rank": 3,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The AI Act defines an AI system as a machine‑based system that is designed to operate with varying levels of autonomy and may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers from the input it receives to generate outputs such as predictions, content, recommendations or decisions that can influence physical or virtual environments.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_3",
+          "quote": "‘AI system’ means a machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment"
+        },
+        {
+          "chunk_id": "ai_act:article_3",
+          "quote": "and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 20.92,
+      "tokens": 2492
+    },
+    {
+      "id": "q11",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_4",
+        "ai_act:article_50(2)",
+        "ai_act:article_50(1)",
+        "ai_act:article_50(4)-(5)#2",
+        "ai_act:article_3#10"
+      ],
+      "retrieve_s": 3.218,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Providers and deployers must take measures, to the best of their ability, to ensure that their staff and any other persons handling the AI system have a sufficient level of AI literacy, taking into account their technical knowledge, experience, education, training and the context in which the AI system is used, as well as the persons or groups on whom the system will be used.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_4",
+          "quote": "Providers and deployers of AI systems shall take measures to ensure, to their best extent, a sufficient level of AI literacy of their staff and other persons dealing with the operation and use of AI systems on their behalf"
+        },
+        {
+          "chunk_id": "ai_act:article_3#10",
+          "quote": "‘AI literacy’ means skills, knowledge and understanding that allow providers, deployers and affected persons, taking into account their respective rights and obligations in the context of this Regulation, to make an informed deployment of AI systems"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 3.05,
+      "tokens": 2049
+    },
+    {
+      "id": "q12",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_31",
+        "ai_act:article_5(1)",
+        "ai_act:recital_58#2",
+        "ai_act:article_5(1)#2",
+        "ai_act:annex_iii"
+      ],
+      "retrieve_s": 3.761,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "No, AI systems that perform social scoring of individuals are prohibited under the AI Act.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:recital_31",
+          "quote": "AI systems providing social scoring of natural persons by public or private actors may lead to discriminatory outcomes and the exclusion of certain groups."
+        },
+        {
+          "chunk_id": "ai_act:article_5(1)",
+          "quote": "the placing on the market, the putting into service or the use of AI systems for the evaluation or classification of natural persons or groups of persons ... based on their social behaviour ... with the social score leading to either or both of the following"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 20.22,
+      "tokens": 2360
+    },
+    {
+      "id": "q13",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_44",
+        "ai_act:recital_18",
+        "ai_act:article_50(3)",
+        "ai_act:article_5(1)#3",
+        "ai_act:annex_iii"
+      ],
+      "retrieve_s": 3.387,
+      "rank": 4,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "No, employers cannot use AI to recognise the emotions of their employees, because the AI Act prohibits the placing on the market, putting into service, or use of AI systems to infer emotions in the workplace, except for medical or safety reasons.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:recital_44",
+          "quote": "Therefore, the placing on the market, the putting into service, or the use of AI systems intended to be used to detect the emotional state of individuals in situations related to the workplace and education should be prohibited."
+        },
+        {
+          "chunk_id": "ai_act:article_5(1)#3",
+          "quote": "the placing on the market, the putting into service for this specific purpose, or the use of AI systems to infer emotions of a natural person in the areas of workplace and education institutions, except where the use of the AI system is intended to be put in place or into the market for medical or safety reasons;"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 1.63,
+      "tokens": 2102
+    },
+    {
+      "id": "q14",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_5(3)",
+        "ai_act:article_5(2)",
+        "ai_act:article_5(5)",
+        "ai_act:recital_35",
+        "ai_act:recital_32"
+      ],
+      "retrieve_s": 3.559,
+      "rank": null,
+      "coverage@5": 0.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Police may use real‑time remote biometric identification in publicly accessible spaces only after a specific authorisation by a judicial or independent administrative authority, except in a duly justified urgent situation where they may start the use immediately but must request the authorisation within 24 hours and stop the use if it is refused, deleting all data.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_5(3)",
+          "quote": "each use for the purposes of law enforcement of a ‘real-time’ remote biometric identification system in publicly accessible spaces shall be subject to a prior authorisation granted by a judicial authority or an independent administrative authority"
+        },
+        {
+          "chunk_id": "ai_act:article_5(3)",
+          "quote": "However, in a duly justified situation of urgency, the use of such system may be commenced without an authorisation provided that such authorisation is requested without undue delay, at the latest within 24 hours"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 12.57,
+      "tokens": 2649
+    },
+    {
+      "id": "q15",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_50(2)",
+        "ai_act:article_50(4)-(5)",
+        "ai_act:recital_134",
+        "ai_act:article_50(1)",
+        "ai_act:recital_136"
+      ],
+      "retrieve_s": 3.767,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Providers must ensure that the outputs of AI systems that generate synthetic audio, image, video or text are marked in a machine‑readable format and detectable as artificially generated or manipulated, using effective, interoperable, robust and reliable technical solutions where technically feasible.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_50(2)",
+          "quote": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 26.14,
+      "tokens": 1957
+    },
+    {
+      "id": "q16",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_50(3)",
+        "ai_act:recital_18",
+        "ai_act:recital_44",
+        "ai_act:recital_73#2",
+        "ai_act:recital_96#2"
+      ],
+      "retrieve_s": 4.779,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Deployers must inform the natural persons exposed to an emotion recognition system about the operation of the system.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_50(3)",
+          "quote": "shall inform the natural persons exposed thereto of the operation of the system"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 6.23,
+      "tokens": 1644
+    },
+    {
+      "id": "q17",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_96",
+        "ai_act:article_27(2)-(5)",
+        "ai_act:recital_96#2",
+        "ai_act:article_27(1)",
+        "ai_act:annex_viii#3"
+      ],
+      "retrieve_s": 3.621,
+      "rank": 4,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Deployers that are bodies governed by public law, private entities providing public services, and deployers of the specific high‑risk AI systems listed in Annex III point 5(b) and 5(c) (such as banking or insurance entities) must carry out a fundamental rights impact assessment.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:recital_96",
+          "quote": "deployers of high-risk AI systems that are bodies governed by public law, or private entities providing public services ... should carry out a fundamental rights impact assessment prior to putting it into use."
+        },
+        {
+          "chunk_id": "ai_act:article_27(1)",
+          "quote": "Prior to deploying a high-risk AI system ... deployers that are bodies governed by public law, or are private entities providing public services, and deployers of high-risk AI systems referred to in points 5 (b) and (c) of Annex III, shall perform an assessment."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 14.62,
+      "tokens": 2392
+    },
+    {
+      "id": "q18",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_65",
+        "ai_act:article_9(1)-(3)",
+        "ai_act:article_9(6)-(10)",
+        "ai_act:article_15(4)",
+        "ai_act:article_17(1)"
+      ],
+      "retrieve_s": 3.377,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The risk management system must be a continuous, iterative process that is planned and run throughout the entire lifecycle of the high‑risk AI system, with regular systematic review and updating.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:recital_65",
+          "quote": "The risk-management system should consist of a continuous, iterative process that is planned and run throughout the entire lifecycle of a high-risk AI system."
+        },
+        {
+          "chunk_id": "ai_act:article_9(1)-(3)",
+          "quote": "The risk management system shall be understood as a continuous iterative process planned and run throughout the entire lifecycle of a high-risk AI system, requiring regular systematic review and updating."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 1.7,
+      "tokens": 2183
+    },
+    {
+      "id": "q19",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_10(1)",
+        "ai_act:recital_67",
+        "ai_act:article_10(3)-(4)",
+        "ai_act:article_10(2)",
+        "ai_act:recital_68"
+      ],
+      "retrieve_s": 3.314,
+      "rank": 3,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The data sets must be relevant, sufficiently representative, as free of errors as possible and complete for the intended purpose, have appropriate statistical properties for the persons or groups concerned, and reflect the specific geographical, contextual, behavioural or functional setting of the system.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_10(3)-(4)",
+          "quote": "Training, validation and testing data sets shall be relevant, sufficiently representative, and to the best extent possible, free of errors and complete in view of the intended purpose."
+        },
+        {
+          "chunk_id": "ai_act:article_10(3)-(4)",
+          "quote": "They shall have the appropriate statistical properties, including, where applicable, as regards the persons or groups of persons in relation to whom the high-risk AI system is intended to be used."
+        },
+        {
+          "chunk_id": "ai_act:article_10(3)-(4)",
+          "quote": "Data sets shall take into account, to the extent required by the intended purpose, the characteristics or elements that are particular to the specific geographical, contextual, behavioural or functional setting within which the high-risk AI system is intended to be used."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 17.73,
+      "tokens": 1965
+    },
+    {
+      "id": "q20",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_14(1)-(3)",
+        "ai_act:recital_73",
+        "ai_act:article_14(4)",
+        "ai_act:article_14(5)",
+        "ai_act:article_26(1)-(4)"
+      ],
+      "retrieve_s": 10.536,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "rejected",
+      "attempts": 2,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [
+        false
+      ],
+      "cites_expected": false,
+      "llm_s": 22.98,
+      "tokens": 4654
+    },
+    {
+      "id": "q21",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_107",
+        "ai_act:recital_104",
+        "ai_act:article_53(1)#2",
+        "ai_act:article_53(1)",
+        "ai_act:annex_xi#2"
+      ],
+      "retrieve_s": 13.694,
+      "rank": 3,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 2,
+      "answer": "Providers must draw up and publicly disclose a sufficiently detailed summary of the training‑data content, using the AI Office’s template, and their technical documentation must contain information on the data used for training, testing and validation, including the type and provenance of the data, curation methodologies, the number of data points, their scope and main characteristics.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_53(1)#2",
+          "quote": "draw up and make publicly available a sufficiently detailed summary about the content used for training of the general-purpose AI model, according to a template provided by the AI Office."
+        },
+        {
+          "chunk_id": "ai_act:recital_107",
+          "quote": "providers of such models draw up and make publicly available a sufficiently detailed summary of the content used for training the general-purpose AI model."
+        },
+        {
+          "chunk_id": "ai_act:annex_xi#2",
+          "quote": "information on the data used for training, testing and validation, where applicable, including the type and provenance of data and curation methodologies (e.g. cleaning, filtering, etc.), the number of data points, their scope and main characteristics;"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        false
+      ],
+      "cites_expected": true,
+      "llm_s": 25.81,
+      "tokens": 5591
+    },
+    {
+      "id": "q22",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_57(1)-(3)",
+        "ai_act:recital_138",
+        "ai_act:article_57(4)-(5)",
+        "ai_act:recital_143",
+        "ai_act:article_57(16)-(17)"
+      ],
+      "retrieve_s": 3.806,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Each Member State must have an AI regulatory sandbox operational by 2 August 2026.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_57(1)-(3)",
+          "quote": "Member States shall ensure that their competent authorities establish at least one AI regulatory sandbox at national level, which shall be operational by 2 August 2026."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 1.2,
+      "tokens": 1834
+    },
+    {
+      "id": "q23",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:recital_57",
+        "ai_act:annex_iii#2",
+        "ai_act:recital_58#2",
+        "ai_act:recital_58#3",
+        "ai_act:recital_54"
+      ],
+      "retrieve_s": 3.499,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "AI systems used for recruitment and selection – such as placing targeted job ads, analysing and filtering applications and evaluating candidates – and AI systems that make decisions on work‑related terms, promotion or termination, allocate tasks based on individual behaviour or personal traits, or monitor and evaluate the performance and behaviour of workers are classified as high‑risk.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:recital_57",
+          "quote": "AI systems used in employment, workers management and access to self-employment, in particular for the recruitment and selection of persons, ... should also be classified as high-risk"
+        },
+        {
+          "chunk_id": "ai_act:annex_iii#2",
+          "quote": "AI systems intended to be used for the recruitment or selection of natural persons, in particular to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates;"
+        },
+        {
+          "chunk_id": "ai_act:annex_iii#2",
+          "quote": "AI systems intended to be used to make decisions affecting terms of work-related relationships, the promotion or termination of work-related contractual relationships, to allocate tasks based on individual behaviour or personal traits or characteristics or to monitor and evaluate the performance and behaviour of persons in such relationships."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 16.72,
+      "tokens": 2438
+    },
+    {
+      "id": "q24",
+      "type": "reference",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_6(8)",
+        "ai_act:article_6(3)-(4)",
+        "ai_act:article_6(5)-(7)",
+        "ai_act:article_6(1)-(2)",
+        "ai_act:recital_6"
+      ],
+      "retrieve_s": 3.578,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "rejected",
+      "attempts": 2,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [
+        false
+      ],
+      "cites_expected": false,
+      "llm_s": 34.78,
+      "tokens": 5136
+    },
+    {
+      "id": "q25",
+      "type": "reference",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:annex_iii#6",
+        "ai_act:annex_iii",
+        "ai_act:annex_iii#5",
+        "ai_act:annex_iii#4",
+        "ai_act:annex_iii#3"
+      ],
+      "retrieve_s": 3.112,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Annex III point 1 covers biometrics, insofar as their use is permitted under Union or national law. It includes remote biometric identification systems (but not systems used solely for verifying a person’s identity), biometric categorisation based on sensitive or protected attributes, and emotion‑recognition AI systems.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:annex_iii",
+          "quote": "1. Biometrics, in so far as their use is permitted under relevant Union or national law:"
+        },
+        {
+          "chunk_id": "ai_act:annex_iii",
+          "quote": "remote biometric identification systems. This shall not include AI systems intended to be used for biometric verification the sole purpose of which is to confirm that a specific natural person is the person he or she claims to be;"
+        },
+        {
+          "chunk_id": "ai_act:annex_iii",
+          "quote": "AI systems intended to be used for biometric categorisation, according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics;"
+        },
+        {
+          "chunk_id": "ai_act:annex_iii",
+          "quote": "AI systems intended to be used for emotion recognition."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 12.22,
+      "tokens": 2466
+    },
+    {
+      "id": "q26",
+      "type": "reference",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_26(8)-(9)",
+        "ai_act:article_26(11)-(12)",
+        "ai_act:article_26(1)-(4)",
+        "ai_act:article_26(10)",
+        "ai_act:article_26(10)#2"
+      ],
+      "retrieve_s": 3.35,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "rejected",
+      "attempts": 2,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "cites_expected": false,
+      "llm_s": 57.26,
+      "tokens": 10149
+    },
+    {
+      "id": "q27",
+      "type": "reference",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_17(1)",
+        "gdpr:article_17(2)-(3)",
+        "gdpr:article_19",
+        "gdpr:recital_17",
+        "gdpr:recital_165"
+      ],
+      "retrieve_s": 3.438,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "rejected",
+      "attempts": 2,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [
+        false,
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 33.55,
+      "tokens": 3942
+    },
+    {
+      "id": "q28",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_33(1)-(4)",
+        "gdpr:recital_85",
+        "gdpr:article_33(5)",
+        "gdpr:article_36(1)-(2)",
+        "gdpr:article_34(4)"
+      ],
+      "retrieve_s": 2.951,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A controller must notify the supervisory authority no later than 72 hours after becoming aware of the breach.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_33(1)-(4)",
+          "quote": "not later than 72 hours after having become aware of it"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 21.04,
+      "tokens": 1494
+    },
+    {
+      "id": "q29",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_83(3)-(4)",
+        "gdpr:article_83(5)-(7)",
+        "gdpr:recital_150",
+        "gdpr:article_58(2)#2",
+        "gdpr:article_83(1)"
+      ],
+      "retrieve_s": 3.149,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The GDPR allows a maximum administrative fine of up to 20 million EUR, or up to 4 % of the undertaking’s total worldwide annual turnover of the preceding financial year, whichever is higher.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_83(5)-(7)",
+          "quote": "administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 3.86,
+      "tokens": 1997
+    },
+    {
+      "id": "q30",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_83(5)-(7)",
+        "gdpr:article_83(3)-(4)",
+        "ai_act:article_99(4)-(6)",
+        "ai_act:article_101(1)-(3)",
+        "ai_act:article_100(2)-(6)"
+      ],
+      "retrieve_s": 3.146,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The GDPR infringements that can be fined up to €10 million or 2 % of worldwide turnover are: (a) breaches of the controller and processor obligations under Articles 8, 11, 25‑39, 42 and 43; (b) breaches of the certification‑body obligations under Articles 42 and 43; (c) breaches of the monitoring‑body obligations under Article 41(4).",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_83(3)-(4)",
+          "quote": "the obligations of the controller and the processor pursuant to Articles 8, 11, 25 to 39 and 42 and 43;"
+        },
+        {
+          "chunk_id": "gdpr:article_83(3)-(4)",
+          "quote": "the obligations of the certification body pursuant to Articles 42 and 43;"
+        },
+        {
+          "chunk_id": "gdpr:article_83(3)-(4)",
+          "quote": "the obligations of the monitoring body pursuant to Article 41(4)."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 20.52,
+      "tokens": 2605
+    },
+    {
+      "id": "q31",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_8(1)-(3)",
+        "gdpr:recital_32",
+        "gdpr:recital_38",
+        "gdpr:recital_71#2",
+        "gdpr:recital_65"
+      ],
+      "retrieve_s": 3.201,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A child can consent to information society services from age 16, although Member States may set a lower age but not below 13.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_8(1)-(3)",
+          "quote": "the processing of the personal data of a child shall be lawful where the child is at least 16 years old."
+        },
+        {
+          "chunk_id": "gdpr:article_8(1)-(3)",
+          "quote": "Member States may provide by law for a lower age for those purposes provided that such lower age is not below 13 years."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 10.23,
+      "tokens": 1631
+    },
+    {
+      "id": "q32",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:recital_40",
+        "gdpr:recital_46",
+        "gdpr:recital_50",
+        "gdpr:article_5(1)",
+        "gdpr:recital_39"
+      ],
+      "retrieve_s": 3.231,
+      "rank": 8,
+      "coverage@5": 0.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The GDPR permits processing when it is based on the data subject’s consent or any other legitimate basis laid down by law, such as compliance with a legal obligation, performance of a contract, or steps taken at the data subject’s request before a contract; when it is necessary to protect the vital interests of the data subject or another natural person; when it is required for a task carried out in the public interest or under official authority; and when further processing is for archiving in the public interest, scientific, historical research or statistical purposes.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:recital_40",
+          "quote": "processed on the basis of the consent of the data subject concerned or some other legitimate basis, laid down by law"
+        },
+        {
+          "chunk_id": "gdpr:recital_40",
+          "quote": "including the necessity for compliance with the legal obligation to which the controller is subject"
+        },
+        {
+          "chunk_id": "gdpr:recital_40",
+          "quote": "or the necessity for the performance of a contract to which the data subject is party"
+        },
+        {
+          "chunk_id": "gdpr:recital_40",
+          "quote": "or in order to take steps at the request of the data subject prior to entering into a contract"
+        },
+        {
+          "chunk_id": "gdpr:recital_46",
+          "quote": "The processing of personal data should also be regarded to be lawful where it is necessary to protect an interest which is essential for the life of the data subject or that of another natural person"
+        },
+        {
+          "chunk_id": "gdpr:recital_50",
+          "quote": "If the processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller"
+        },
+        {
+          "chunk_id": "gdpr:recital_50",
+          "quote": "Further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes should be considered to be compatible lawful processing operations"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 8.36,
+      "tokens": 2904
+    },
+    {
+      "id": "q33",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_12(3)-(4)",
+        "gdpr:recital_59",
+        "gdpr:article_12(5)-(7)",
+        "gdpr:article_12(1)-(2)",
+        "gdpr:recital_86"
+      ],
+      "retrieve_s": 3.785,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A controller must respond to a data subject’s request without undue delay and at the latest within one month of receipt, although this period can be extended by two further months where necessary because of complexity or number of requests.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_12(3)-(4)",
+          "quote": "within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests."
+        },
+        {
+          "chunk_id": "gdpr:recital_59",
+          "quote": "the controller should be obliged to respond to requests from the data subject without undue delay and at the latest within one month"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 9.37,
+      "tokens": 1866
+    },
+    {
+      "id": "q34",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_37(5)-(7)",
+        "gdpr:article_37(1)-(4)",
+        "gdpr:article_35(1)-(3)",
+        "gdpr:article_39(1)-(2)",
+        "gdpr:article_38(1)-(6)"
+      ],
+      "retrieve_s": 2.972,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A data protection officer must be designated whenever the controller or processor (i) is a public authority or body (except courts acting in their judicial capacity), (ii) its core activities involve regular and systematic large‑scale monitoring of data subjects, or (iii) its core activities involve large‑scale processing of special categories of data or data on criminal convictions. In other situations a DPO may also have to be appointed if required by Union or Member State law.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_37(1)-(4)",
+          "quote": "The controller and the processor shall designate a data protection officer in any case where: (a) the processing is carried out by a public authority or body, except for courts acting in their judicial capacity;"
+        },
+        {
+          "chunk_id": "gdpr:article_37(1)-(4)",
+          "quote": "(b) the core activities of the controller or the processor consist of processing operations which, by virtue of their nature, their scope and/or their purposes, require regular and systematic monitoring of data subjects on a large scale;"
+        },
+        {
+          "chunk_id": "gdpr:article_37(1)-(4)",
+          "quote": "(c) the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to Article 9 and personal data relating to criminal convictions and offences referred to in Article 10."
+        },
+        {
+          "chunk_id": "gdpr:article_37(1)-(4)",
+          "quote": "In cases other than those referred to in paragraph 1, the controller or processor or associations and other bodies representing categories of controllers or processors may or, where required by Union or Member State law shall, designate a data protection officer."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 18.54,
+      "tokens": 2919
+    },
+    {
+      "id": "q35",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_20(1)-(4)",
+        "gdpr:recital_68",
+        "gdpr:recital_156#2",
+        "gdpr:article_14(2)",
+        "gdpr:article_13(2)"
+      ],
+      "retrieve_s": 2.953,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Personal data must be provided in a structured, commonly used and machine‑readable format (often also described as interoperable).",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_20(1)-(4)",
+          "quote": "in a structured, commonly used and machine-readable format"
+        },
+        {
+          "chunk_id": "gdpr:recital_68",
+          "quote": "in a structured, commonly used, machine-readable and interoperable format"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 11.68,
+      "tokens": 2278
+    },
+    {
+      "id": "q36",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:recital_71",
+        "gdpr:article_22(1)-(4)",
+        "gdpr:recital_68",
+        "gdpr:article_20(1)-(4)",
+        "gdpr:article_21(1)-(5)"
+      ],
+      "retrieve_s": 3.075,
+      "rank": 2,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Yes, the GDPR gives data subjects a right not to be subject to decisions based solely on automated processing.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_22(1)-(4)",
+          "quote": "The data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her."
+        },
+        {
+          "chunk_id": "gdpr:recital_71",
+          "quote": "The data subject should have the right not to be subject to a decision, which may include a measure, evaluating personal aspects relating to him or her which is based solely on automated processing and which produces legal effects concerning him or her or similarly significantly affects him or her."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 20.77,
+      "tokens": 2155
+    },
+    {
+      "id": "q37",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:recital_91#2",
+        "gdpr:recital_90",
+        "gdpr:article_35(1)-(3)",
+        "gdpr:recital_92",
+        "gdpr:article_35(4)-(6)"
+      ],
+      "retrieve_s": 3.219,
+      "rank": 3,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A data protection impact assessment is required when the processing is likely to result in a high risk to the rights and freedoms of natural persons, in particular for (a) a systematic and extensive evaluation of personal aspects based on automated processing, including profiling, that produces legal effects or similarly significantly affects the person; (b) processing on a large scale of special categories of data or of data concerning criminal convictions and offences; and (c) systematic monitoring of a publicly accessible area on a large scale.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_35(1)-(3)",
+          "quote": "Where a type of processing ... is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data."
+        },
+        {
+          "chunk_id": "gdpr:article_35(1)-(3)",
+          "quote": "a systematic and extensive evaluation of personal aspects ... based on automated processing, including profiling, and on which decisions are based that produce legal effects ... or similarly significantly affect the natural person;"
+        },
+        {
+          "chunk_id": "gdpr:article_35(1)-(3)",
+          "quote": "processing on a large scale of special categories of data referred to in Article 9(1), or of personal data relating to criminal convictions and offences referred to in Article 10;"
+        },
+        {
+          "chunk_id": "gdpr:article_35(1)-(3)",
+          "quote": "a systematic monitoring of a publicly accessible area on a large scale."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 2.04,
+      "tokens": 1992
+    },
+    {
+      "id": "q38",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_5(1)#2",
+        "ai_act:recital_94",
+        "gdpr:article_47(2)",
+        "gdpr:article_5(1)",
+        "gdpr:recital_39"
+      ],
+      "retrieve_s": 2.722,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The storage‑limitation principle requires that personal data be kept only for as long as is necessary for the purposes for which they are processed and that the period of storage be limited to a strict minimum, with any longer retention allowed only for archiving, scientific, historical research or statistical purposes under appropriate safeguards.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_5(1)#2",
+          "quote": "kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed"
+        },
+        {
+          "chunk_id": "gdpr:recital_39",
+          "quote": "This requires, in particular, ensuring that the period for which the personal data are stored is limited to a strict minimum."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 19.89,
+      "tokens": 2113
+    },
+    {
+      "id": "q39",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_9(1)",
+        "gdpr:recital_53",
+        "gdpr:article_9(2)#3",
+        "ai_act:article_10(5)#2",
+        "gdpr:recital_51"
+      ],
+      "retrieve_s": 2.71,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "The special categories include personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data used to uniquely identify a person, health data, and data about a person’s sex life or sexual orientation.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_9(1)",
+          "quote": "personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership"
+        },
+        {
+          "chunk_id": "gdpr:article_9(1)",
+          "quote": "genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 3.01,
+      "tokens": 2059
+    },
+    {
+      "id": "q40",
+      "type": "fact",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_34(1)-(3)",
+        "gdpr:recital_86",
+        "gdpr:recital_85",
+        "gdpr:article_34(4)",
+        "gdpr:article_33(1)-(4)"
+      ],
+      "retrieve_s": 2.86,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "A controller must inform data subjects without undue delay when the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_34(1)-(3)",
+          "quote": "When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 12.31,
+      "tokens": 1803
+    },
+    {
+      "id": "q41",
+      "type": "ru",
+      "lang": "ru",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:recital_141",
+        "gdpr:recital_94",
+        "gdpr:recital_9",
+        "gdpr:article_83(5)-(7)",
+        "gdpr:recital_64"
+      ],
+      "retrieve_s": 1.314,
+      "rank": 4,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Максимальный штраф по GDPR составляет до 20 000 000 евро или, для компаний, до 4 % от их мирового годового оборота за предыдущий финансовый год, в зависимости от того, что больше.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_83(5)-(7)",
+          "quote": "administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 20.41,
+      "tokens": 2100
+    },
+    {
+      "id": "q42",
+      "type": "ru",
+      "lang": "ru",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_33(1)-(4)",
+        "gdpr:recital_85",
+        "ai_act:article_73(8)-(11)",
+        "gdpr:recital_86",
+        "gdpr:recital_87"
+      ],
+      "retrieve_s": 1.256,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Не позднее 72 часов после того, как контролёр узнал о нарушении.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_33(1)-(4)",
+          "quote": "the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it"
+        },
+        {
+          "chunk_id": "gdpr:recital_85",
+          "quote": "the controller should notify the personal data breach to the supervisory authority without undue delay and, where feasible, not later than 72 hours after having become aware of it"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 13.19,
+      "tokens": 1901
+    },
+    {
+      "id": "q43",
+      "type": "ru",
+      "lang": "ru",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_5(1)",
+        "ai_act:article_5(1)#2",
+        "ai_act:article_5(1)#3",
+        "ai_act:article_5(1)#4",
+        "ai_act:recital_29#3"
+      ],
+      "retrieve_s": 1.185,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "rejected",
+      "attempts": 2,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 45.02,
+      "tokens": 10000
+    },
+    {
+      "id": "q44",
+      "type": "ru",
+      "lang": "ru",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_18(1)-(3)",
+        "ai_act:article_23(4)-(7)",
+        "ai_act:article_19(1)-(2)",
+        "ai_act:article_26(6)-(7)",
+        "ai_act:recital_71"
+      ],
+      "retrieve_s": 1.399,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Поставщик должен хранить техническую документацию в течение 10 лет.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_18(1)-(3)",
+          "quote": "The provider shall, for a period ending 10 years after the high-risk AI system has been placed on the market or put into service, keep at the disposal of the national competent authorities:"
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 33.52,
+      "tokens": 1952
+    },
+    {
+      "id": "q45",
+      "type": "ru",
+      "lang": "ru",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_5(1)#4",
+        "ai_act:article_5(1)",
+        "ai_act:article_5(1)#2",
+        "ai_act:article_100(2)-(6)",
+        "ai_act:article_5(1)#3"
+      ],
+      "retrieve_s": 1.202,
+      "rank": 6,
+      "coverage@5": 0.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Штраф может достигать 1 500 000 евро.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_100(2)-(6)",
+          "quote": "Non-compliance with the prohibition of the AI practices referred to in Article 5 shall be subject to administrative fines of up to EUR 1 500 000."
+        }
+      ],
+      "first_attempt_citations": [
+        true
+      ],
+      "cites_expected": false,
+      "llm_s": 17.03,
+      "tokens": 1965
+    },
+    {
+      "id": "q46",
+      "type": "multi",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_100(2)-(6)",
+        "ai_act:article_101(1)-(3)",
+        "ai_act:article_5(1)#4",
+        "gdpr:article_83(5)-(7)",
+        "ai_act:recital_29#3"
+      ],
+      "retrieve_s": 3.046,
+      "rank": 4,
+      "coverage@5": 0.5,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Under the AI Act, breaching the prohibited AI practices in Article 5 can be fined up to €1.5 million, while the GDPR permits administrative fines of up to €20 million or 4 % of worldwide annual turnover, whichever is higher.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_100(2)-(6)",
+          "quote": "Non-compliance with the prohibition of the AI practices referred to in Article 5 shall be subject to administrative fines of up to EUR 1 500 000."
+        },
+        {
+          "chunk_id": "gdpr:article_83(5)-(7)",
+          "quote": "Infringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher:"
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 5.92,
+      "tokens": 2349
+    },
+    {
+      "id": "q47",
+      "type": "multi",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "ai_act:article_26(1)-(4)",
+        "ai_act:article_26(5)",
+        "ai_act:article_20(1)-(2)",
+        "ai_act:article_26(8)-(9)",
+        "ai_act:article_26(6)-(7)"
+      ],
+      "retrieve_s": 3.084,
+      "rank": 1,
+      "coverage@5": 0.5,
+      "status": "answered",
+      "attempts": 2,
+      "answer": "Providers of high‑risk AI systems must take corrective actions and investigate any risks, whereas deployers must ensure the systems are used according to the instructions, assign competent human oversight, monitor operation, keep required logs, inform workers and their representatives, and, if they are public authorities, comply with registration obligations.",
+      "citations": [
+        {
+          "chunk_id": "ai_act:article_20(1)-(2)",
+          "quote": "shall immediately take the necessary corrective actions to bring that system into conformity, to withdraw it, to disable it, or to recall it, as appropriate."
+        },
+        {
+          "chunk_id": "ai_act:article_20(1)-(2)",
+          "quote": "shall immediately investigate the causes, in collaboration with the reporting deployer, where applicable, and inform the market surveillance authorities"
+        },
+        {
+          "chunk_id": "ai_act:article_26(1)-(4)",
+          "quote": "Deployers of high-risk AI systems shall take appropriate technical and organisational measures to ensure they use such systems in accordance with the instructions for use accompanying the systems, pursuant to paragraphs 3 and 6."
+        },
+        {
+          "chunk_id": "ai_act:article_26(1)-(4)",
+          "quote": "Deployers shall assign human oversight to natural persons who have the necessary competence, training and authority, as well as the necessary support."
+        },
+        {
+          "chunk_id": "ai_act:article_26(5)",
+          "quote": "Deployers shall monitor the operation of the high-risk AI system on the basis of the instructions for use and, where relevant, inform providers in accordance with Article 72."
+        },
+        {
+          "chunk_id": "ai_act:article_26(6)-(7)",
+          "quote": "Before putting into service or using a high-risk AI system at the workplace, deployers who are employers shall inform workers’ representatives and the affected workers that they will be subject to the use of the high-risk AI system."
+        },
+        {
+          "chunk_id": "ai_act:article_26(8)-(9)",
+          "quote": "Deployers of high-risk AI systems that are public authorities, or Union institutions, bodies, offices or agencies shall comply with the registration obligations referred to in Article 49."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 62.84,
+      "tokens": 8671
+    },
+    {
+      "id": "q48",
+      "type": "multi",
+      "lang": "en",
+      "answerable": true,
+      "retrieved": [
+        "gdpr:article_22(1)-(4)",
+        "gdpr:article_20(1)-(4)",
+        "gdpr:recital_71",
+        "ai_act:recital_10",
+        "ai_act:article_86(1)-(3)"
+      ],
+      "retrieve_s": 3.142,
+      "rank": 1,
+      "coverage@5": 1.0,
+      "status": "answered",
+      "attempts": 1,
+      "answer": "Under the GDPR individuals have the right not to be subject to a decision based solely on automated processing, including profiling, and, where such processing is allowed, they must be able to obtain human intervention, express their view and contest the decision. Under the AI Act they also have the right to receive clear and meaningful explanations of how a high‑risk AI system contributed to a decision that affects them, in addition to retaining the GDPR rights on automated decision‑making.",
+      "citations": [
+        {
+          "chunk_id": "gdpr:article_22(1)-(4)",
+          "quote": "The data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her."
+        },
+        {
+          "chunk_id": "gdpr:article_22(1)-(4)",
+          "quote": "the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision."
+        },
+        {
+          "chunk_id": "ai_act:article_86(1)-(3)",
+          "quote": "Any affected person ... shall have the right to obtain from the deployer clear and meaningful explanations of the role of the AI system in the decision-making procedure and the main elements of the decision taken."
+        },
+        {
+          "chunk_id": "ai_act:recital_10",
+          "quote": "data subjects continue to enjoy all the rights and guarantees awarded to them by such Union law, including the rights related to solely automated individual decision-making, including profiling."
+        }
+      ],
+      "first_attempt_citations": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "cites_expected": true,
+      "llm_s": 4.23,
+      "tokens": 3183
+    },
+    {
+      "id": "u01",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:recital_105",
+        "ai_act:article_59(2)-(3)",
+        "ai_act:recital_136",
+        "ai_act:article_5(1)#3",
+        "ai_act:article_60(1)-(3)"
+      ],
+      "retrieve_s": 2.891,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 13.58,
+      "tokens": 1694
+    },
+    {
+      "id": "u02",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:recital_15",
+        "gdpr:article_47(2)#3",
+        "gdpr:article_47(2)",
+        "gdpr:recital_110",
+        "gdpr:article_47(2)#2"
+      ],
+      "retrieve_s": 2.72,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 14.96,
+      "tokens": 1495
+    },
+    {
+      "id": "u03",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:recital_45",
+        "ai_act:recital_69",
+        "gdpr:recital_13",
+        "ai_act:article_78(2)",
+        "gdpr:recital_7"
+      ],
+      "retrieve_s": 3.169,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 5.45,
+      "tokens": 1091
+    },
+    {
+      "id": "u04",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:recital_179#2",
+        "ai_act:article_100(2)-(6)",
+        "ai_act:article_101(1)-(3)",
+        "ai_act:article_99(4)-(6)",
+        "ai_act:recital_179"
+      ],
+      "retrieve_s": 2.867,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 0.43,
+      "tokens": 1662
+    },
+    {
+      "id": "u05",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:article_65(8)",
+        "ai_act:article_65(1)-(4)",
+        "ai_act:article_100(2)-(6)",
+        "ai_act:article_110",
+        "ai_act:annex_x#2"
+      ],
+      "retrieve_s": 3.145,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 16.59,
+      "tokens": 1752
+    },
+    {
+      "id": "u06",
+      "type": "unanswerable",
+      "lang": "ru",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:article_99(1)-(3)",
+        "gdpr:article_83(5)-(7)",
+        "gdpr:article_83(3)-(4)",
+        "ai_act:article_99(4)-(6)",
+        "gdpr:recital_150"
+      ],
+      "retrieve_s": 1.492,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 10.56,
+      "tokens": 1770
+    },
+    {
+      "id": "u07",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "ai_act:article_105",
+        "ai_act:article_103",
+        "ai_act:article_107",
+        "ai_act:article_102",
+        "ai_act:article_106"
+      ],
+      "retrieve_s": 2.967,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 0.42,
+      "tokens": 1919
+    },
+    {
+      "id": "u08",
+      "type": "unanswerable",
+      "lang": "en",
+      "answerable": false,
+      "retrieved": [
+        "gdpr:article_68(1)-(6)",
+        "gdpr:recital_140",
+        "gdpr:article_75(1)-(5)",
+        "gdpr:recital_139",
+        "gdpr:recital_172"
+      ],
+      "retrieve_s": 2.619,
+      "rank": null,
+      "coverage@5": null,
+      "status": "not_found",
+      "attempts": 1,
+      "answer": "",
+      "citations": [],
+      "first_attempt_citations": [],
+      "cites_expected": false,
+      "llm_s": 2.37,
+      "tokens": 1146
+    }
+  ]
+}

@@ -47,6 +47,20 @@ def main() -> None:
     p = sub.add_parser("models")
     p.add_argument("--provider")
 
+    p = with_model(sub.add_parser("eval"))
+    p.add_argument("--name", required=True)
+    p.add_argument("--mode", choices=["vector", "fulltext", "hybrid", "rerank"], default="rerank")
+    p.add_argument("-k", type=int, default=5)
+    p.add_argument("--answers", action="store_true")
+    p.add_argument("--only", nargs="+")
+    p.add_argument("--delay", type=float, default=0.0)
+    p.add_argument("--rerank-any-language", action="store_true")
+
+    with_chunks(sub.add_parser("eval-check"))
+
+    p = sub.add_parser("compare")
+    p.add_argument("names", nargs="+")
+
     args = parser.parse_args()
 
     if args.cmd == "download":
@@ -84,3 +98,32 @@ def main() -> None:
         from doctrace.llm import list_models
 
         print("\n".join(list_models(args.provider)))
+    elif args.cmd == "eval":
+        from doctrace.evaluate import print_report, run
+
+        report = run(
+            args.name,
+            mode=args.mode,
+            k=args.k,
+            with_answers=args.answers,
+            only=args.only,
+            delay=args.delay,
+            model=args.model,
+            max_chars=args.max_chars,
+            rerank_any_language=args.rerank_any_language,
+        )
+        print_report(report)
+    elif args.cmd == "eval-check":
+        from doctrace.config import ROOT
+        from doctrace.evaluate import check_labels, load_questions, write_review
+        from doctrace.ingest.pipeline import load_chunks
+
+        chunks, questions = load_chunks(args.max_chars), load_questions()
+        problems = check_labels(chunks, questions)
+        print("\n".join(problems) or f"all {sum(q.answerable for q in questions)} labelled questions match a chunk")
+        write_review(chunks, questions, ROOT / "eval" / "review.md")
+        print("review sheet: eval/review.md")
+    elif args.cmd == "compare":
+        from doctrace.evaluate import compare
+
+        compare(args.names)

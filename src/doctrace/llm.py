@@ -41,7 +41,7 @@ def provider_config(provider: str | None = None, model: str | None = None) -> tu
 def _client(base_url: str, api_key: str):
     from openai import OpenAI
 
-    return OpenAI(base_url=base_url, api_key=api_key, timeout=120, max_retries=3)
+    return OpenAI(base_url=base_url, api_key=api_key, timeout=120, max_retries=6)
 
 
 def list_models(provider: str | None = None) -> list[str]:

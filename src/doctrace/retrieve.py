@@ -11,7 +11,7 @@ MODES = ("vector", "fulltext", "hybrid", "rerank")
 RRF_K = 60
 WEIGHTS = {"vector": 1.0, "fulltext": 1.0, "ref": 3.0}
 
-COLUMNS = "id, doc_id, ref, heading, text, page"
+COLUMNS = "id, doc_id, ref, heading, text, page, kind, article, paragraphs, annex"
 
 VECTOR_SQL = f"""
 SELECT {COLUMNS}, 1 - (embedding <=> %(q)s) AS score
@@ -69,6 +69,10 @@ class Hit:
     heading: str
     text: str
     page: int
+    kind: str = ""
+    article: int | None = None
+    paragraphs: list = field(default_factory=list)
+    annex: str | None = None
     ranks: dict = field(default_factory=dict)
     fused: float = 0.0
     rerank: float | None = None
@@ -123,7 +127,7 @@ def doc_hint(query: str) -> str | None:
 
 
 def _rows_to_hits(rows) -> list[tuple[Hit, float]]:
-    return [(Hit(*row[:6]), row[6]) for row in rows]
+    return [(Hit(*row[:10]), row[10]) for row in rows]
 
 
 def vector_candidates(conn, query: str, model: str, collection: str, n: int):
